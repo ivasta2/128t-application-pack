@@ -22,7 +22,7 @@ service 128T restart
 
 ## Configuring your 128T to use the Module
 
-Each of the 128T application modules in this repository uses a specific NAME (the naming convention in these modules will use ALL CAPS) that needs to be configured within a `service` definition on your 128T. This NAME will be referenced in the `application-name` field in the configuration. For example:
+Each of the 128T applications should be configured within a `service` definition on your 128T. This NAME will be referenced in the `application-name` field in the configuration. For example:
 
 ```
 admin@labsystem# show config running authority service ZOOM
@@ -54,7 +54,7 @@ In the case of the Zoom plugin, the `application-name` is ZOOM. The README.md fi
 After configuring the service, don't forget to configure a `service-route` following the basic principles of 128T configuration design. For more information, [review our documentation](https://docs.128technology.com/docs/concepts_glossary/#service-routes).
 
 
-Current list of applications:
+Current list of applications:  
 Auth  
 BGP  
 Biff  
