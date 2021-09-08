@@ -16,6 +16,7 @@ sudo su -
 yum -y install git
 cd /etc/128technology/application-modules/
 git clone https://github.com/ivasta2/128t-application-pack.git
+cp 128t-application-pack/application-pack.py .
 chmod +x application-pack.py
 service 128T restart
 ```
