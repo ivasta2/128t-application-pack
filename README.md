@@ -21,6 +21,25 @@ chmod +x application-pack.py
 service 128T restart
 ```
 
+## Dependencies
+
+This module requires dns and internet access from the router local host. If you are using Management over the traffic link, you will need to grant access to `_internal_` tenant of your Internet service:
+
+```
+service Internet-service
+  name                 Internet-service
+  scope                private
+  security             Internet-sec-policy
+  address              0.0.0.0/0
+  generate-categories  false
+
+  access-policy        _internal_
+      source      _internal_
+      permission  allow
+  exit
+exit
+```
+
 ## Configuring your 128T to use the Module
 
 Each of the 128T applications should be configured within a `service` definition on your 128T. This NAME will be referenced in the `application-name` field in the configuration. For example:
