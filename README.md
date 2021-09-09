@@ -69,9 +69,9 @@ config
 exit
 ```
 
-In the case of the Zoom plugin, the `application-name` is ZOOM. The README.md file for each of the modules will indicate its `application-name`.
+In the case the `application-name` is ZOOM.
 
-After configuring the service, don't forget to configure a `service-route` following the basic principles of 128T configuration design. For more information, [review our documentation](https://docs.128technology.com/docs/concepts_glossary/#service-routes).
+After configuring the service, don't forget to configure a `service-route` following the basic principles of 128T configuration design. For more information: https://docs.128technology.com/docs/concepts_glossary/#service-routes
 
 
 Current list of applications:  
